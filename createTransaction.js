@@ -22,8 +22,7 @@ console.log('Your UUID is: ' + myuuid);
       });
     });
     // The file contents are stored in the 'dataObj' variable
-    console.log('File contents:', dataObj);
- 
+    console.log('File contents:', dataObj); 
 
 const url = 'https://api.circle.com/v1/w3s/developer/transactions/transfer';
 const options = {
