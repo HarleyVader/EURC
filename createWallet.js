@@ -26,7 +26,7 @@ async function main() {
     // The file contents are stored in the 'dataObj' variable
     //console.log('File contents:', dataObj);
 
-    const url = process.env.URL_WALLETS;
+    const url = 'https://api.circle.com/v1/w3s/developer/wallets';
     const options = {
       method: 'POST',
       headers: {

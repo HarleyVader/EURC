@@ -49,7 +49,7 @@ async function main() {
       console.log('Your UUID is: ' + myuuid);
 
       // Create WalletSet
-      const urlwalletSets = process.env.URL_WALLET_SETS;
+      const urlwalletSets = 'https://api.circle.com/v1/w3s/developer/walletSets';
 
       const options = {
         method: 'POST',

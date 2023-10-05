@@ -18,7 +18,7 @@ async function main() {
         console.log('Secret has been written to the file');
 
         // Fetch your entity's public key
-        const url = process.env.URL_PUBLIC_KEY;
+        const url = 'https://api.circle.com/v1/w3s/config/entity/publicKey';
         const options = {
             method: 'GET',
             headers: {
