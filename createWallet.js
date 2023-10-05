@@ -37,7 +37,7 @@ async function main() {
       body: JSON.stringify({
         idempotencyKey: myuuid,
         entitySecretCipherText: dataObj.toString(),
-        blockchains: ["0x5e44db7996c682e92a960b65ac713a54ad815c6b", "0xa683d909e996052955500ddc45ca13e25c76e286"],
+        blockchains: ["ETH-GOERLI"],
         count: 1,
         walletSetId: `${process.env.WALLET_SET_ID}`,
       }),
@@ -45,8 +45,14 @@ async function main() {
 
     try {
       const response = await fetch(url, options);
-      const data = await response.json();
-      console.log(data);
+      const responseObj = await response.json();
+      console.log(responseObj);
+
+      const { data } = responseObj; // Destructure the 'data' property
+      const { wallets } = data; // Destructure the 'wallets' property
+
+      console.log(wallets)
+
     } catch (error) {
       console.error(error);
     }
