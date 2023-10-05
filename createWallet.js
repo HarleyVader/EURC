@@ -37,7 +37,7 @@ async function main() {
       body: JSON.stringify({
         idempotencyKey: myuuid,
         entitySecretCipherText: dataObj.toString(),
-        blockchains: ["ETH-GOERLI"],
+        blockchains: ["MATIC-MUMBAI"],
         count: 1,
         walletSetId: `${process.env.WALLET_SET_ID}`,
       }),
