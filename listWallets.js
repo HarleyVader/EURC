@@ -12,18 +12,18 @@ const options = {
   }
 };
 
-try {
-      const response = await fetch(url, options);
-      const responseObj = await response.json();
-      console.log(responseObj);
+  try {
+        const response = await fetch(url, options);
+        const responseObj = await response.json();
+        console.log(responseObj);
 
-      const { data } = responseObj; // Destructure the 'data' property
-      const { wallets } = data; // Destructure the 'wallets' property
+        const { data } = responseObj; // Destructure the 'data' property
+        const { wallets } = data; // Destructure the 'wallets' property
 
-      console.log(wallets)
+        console.log(wallets)
 
-    } catch (error) {
-      console.error(error);
-  }
+      } catch (error) {
+        console.error(error);
+    }
   }
   main();
