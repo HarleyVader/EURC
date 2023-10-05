@@ -5,7 +5,7 @@ config();
 
 
 const tempurl = 'https://api.circle.com/v1/w3s/wallets/'
-const __WALLET_ID__ = '76d69d94-226d-435a-a877-35e9a57795a4'
+const __WALLET_ID__ = 'e6784ee0-9c16-4876-85d1-d8d3d540720c'
 const tempbalances = '/balances'
 
 const url = tempurl + __WALLET_ID__ + tempbalances;
