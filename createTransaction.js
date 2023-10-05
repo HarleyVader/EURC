@@ -35,12 +35,12 @@ const options = {
   },
   body: JSON.stringify({
     amounts: ['0.000000000000000001'],
-    walletId: '76d69d94-226d-435a-a877-35e9a57795a4',
+    walletId: '76d69d94-226d-435a-a877-35e9a57795a4', //walletId of wallet with test funds in step 9
     tokenId: 'e4f549f9-a910-59b1-b5cd-8f972871f5db',
     refId: 'melkaneas first transaction',
     feeLevel: 'HIGH',
     entitySecretCiphertext: dataObj.toString(),
-    destinationAddress: '0xf6fee84bdc2c4d5b9f2f1ebadce8c5fdccf9962b',
+    destinationAddress: '0xf6fee84bdc2c4d5b9f2f1ebadce8c5fdccf9962b', //replace with destination address in step 9
     idempotencyKey: myuuid,
   })
     

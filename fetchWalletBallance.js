@@ -4,9 +4,9 @@ import { config } from 'dotenv';
 config();
 
 
-const tempurl = 'https://api.circle.com/v1/w3s/wallets/'
-const __WALLET_ID__ = 'e6784ee0-9c16-4876-85d1-d8d3d540720c'
-const tempbalances = '/balances'
+const tempurl = 'https://api.circle.com/v1/w3s/wallets/';
+const __WALLET_ID__ = process.env.WALLET_ID;
+const tempbalances = '/balances';
 
 const url = tempurl + __WALLET_ID__ + tempbalances;
 console.log(url);
